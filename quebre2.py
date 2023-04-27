@@ -1,4 +1,5 @@
-import hashlib
+# import hashlib
+import yescrypt
 
 hash = input()
 
@@ -17,11 +18,14 @@ bytes = arquivo.readlines()
 
 for palavra in bytes:
     palavra = palavra[0:-1]
-    pala = salt+palavra
-    nhash = hashlib.sha512(pala.encode('utf-8')).hexdigest()
+    N = 2048
+    r = 8
+    p = 1
+    nhash = yescrypt.yescrypt_kdf_body(palavra, salt, N, r, p)
+    # nhash = hashlib.sha512(pala.encode('utf-8')).hexdigest()
     print(palavra)
-    print(nhash)
-    if(crip == nhash):
+    print(nhash.hex())
+    if crip == nhash.hex():
         print("achou")
         print(palavra)
         break
