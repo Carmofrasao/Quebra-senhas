@@ -4,11 +4,7 @@ from crypt import crypt
 hash = 'testeadm:$y$j9T$5LImmws2fco9AeRmLSB2j0$fYPmdqu1Q/FDiwPJgkCIW9wX76w12SNEiYAodUzafo5:19472:0:99999:7:::'
 
 hash = hash.split(':')
-
-if hash[0] == "Pimpolho":
-    salt = hash[1][0:29]
-elif hash[0] == "testeadm":
-    salt = hash[1][0:40]
+salt = hash[1][0:29]
 
 arquivo = open("dicionario.txt", "r", encoding='utf-8')
 
