@@ -2,7 +2,7 @@ import hashlib
 
 chave = 'e8d95a51f3af4a3b134bf6bb680a213a'
 
-arquivo = open("python.txt", "rb")
+arquivo = open("dicionario.txt", "rb")
 
 bytes = arquivo.readlines()
 
