@@ -20,9 +20,15 @@
 
 * Senha 2:
     * $y$j9T$5LImmws2fco9AeRmLSB2j0
-    * 
+    * (Essa ta dificil)
     * yescript
 
 ### Como gerar esse tipo de senha no Linux (em detalhes)?
+* Crie uma string com caracteres aleatórios;
+* Crie a senha desejada;
+* Concatene a string com a senha;
+* Criptografe com o algoritmo yescript.
 
 ### Quebre as duas senhas e explique o processo
+
+Visto que ja temos a hash da senha e o salt, usando um dicionario, foi concatenado o salt sobre cada palavra e essa string foi criptografada usando yescript, assim para cada string gerada, foi feita a comparação com a hash original.
