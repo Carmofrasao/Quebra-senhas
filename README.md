@@ -6,6 +6,11 @@
     * abacate
     * yescript
 
-2) Como gerar esse tipo de senha no Linux (em detalhes)?
+* Senha 2:
+    * $y$j9T$5LImmws2fco9AeRmLSB2j0$fYPmdqu1Q/
+    * 
+    * yescript
 
-3) Quebre as duas senhas e explique o processo
+## Como gerar esse tipo de senha no Linux (em detalhes)?
+
+## Quebre as duas senhas e explique o processo
