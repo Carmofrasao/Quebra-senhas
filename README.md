@@ -19,7 +19,7 @@
     * yescript
 
 * Senha 2:
-    * $y$j9T$5LImmws2fco9AeRmLSB2j0$fYPmdqu1Q/
+    * $y$j9T$5LImmws2fco9AeRmLSB2j0
     * 
     * yescript
 
