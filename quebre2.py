@@ -6,20 +6,20 @@ hash = 'testeadm:$y$j9T$5LImmws2fco9AeRmLSB2j0$fYPmdqu1Q/FDiwPJgkCIW9wX76w12SNEi
 hash = hash.split(':')
 salt = hash[1][0:29]
 
-arquivo = open("dicionario.txt", "r", encoding='utf-8')
+arquivo = open("rockyou.txt", "r", encoding='latin1')
 
-bytes = arquivo.readlines()
+lines = list(lined for line in arquivo if len(lined := line.strip()) <= 8)
+for i, palavra in enumerate(lines, 1):
+    palavra = palavra.strip()
+    if len(palavra) > 8:
+        continue
+    nhash = crypt(palavra, salt=salt)
 
-for palavra in bytes:
-    for i in range(0,10):
-        palavra = palavra[0:-1]+f'{i}'
-        nhash = crypt(palavra, salt=salt)
-
+    print(f'{i}/{len(lines)} {palavra}')
+    print(nhash)
+    if hash[1] == nhash:
+        print()
+        print("Achou a senha:")
         print(palavra)
-        print(nhash)
-        if hash[1] == nhash:
-            print()
-            print("Achou a senha:")
-            print(palavra)
-            print()
-            break
+        print()
+        break
