@@ -10,6 +10,7 @@
     * real	0m0,337s
     * user	0m0,295s
     * sys	0m0,041s
+
 ## Exercício 2:
 
 ### Qual porção é o SALT e qual a senha? Que função é usada?
@@ -17,11 +18,13 @@
     * $y$j9T$nFwHNF0c3SCbH6ESyzSKw.
     * abacate
     * yescript
+    * Tempo: Instantâneo 
 
 * Senha 2:
     * $y$j9T$5LImmws2fco9AeRmLSB2j0
-    * (Essa ta dificil)
+    * 123admin
     * yescript
+    * Tempo: 4,6 horas
 
 ### Como gerar esse tipo de senha no Linux (em detalhes)?
 * Crie uma string com caracteres aleatórios;
