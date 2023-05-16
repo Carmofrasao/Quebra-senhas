@@ -12,7 +12,7 @@
     * sys	0m0,041s
 
 ## Exercício 2:
-
+https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 ### Qual porção é o SALT e qual a senha? Que função é usada?
 * Senha 1:
     * $y$j9T$nFwHNF0c3SCbH6ESyzSKw.
